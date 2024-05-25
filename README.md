@@ -167,3 +167,5 @@ GRAFİKLER:
 ![bubble 2](https://github.com/BurakBasyildiz/Veri_Gorsellestirme_Donem_Sonu_Odevi/assets/161215094/45d61fd5-0da9-4019-be61-6ed60f1378fe)
 ![violin](https://github.com/BurakBasyildiz/Veri_Gorsellestirme_Donem_Sonu_Odevi/assets/161215094/100927ae-eaea-454a-b72e-35aa75dacd5f)
 ![yakıtuygunlukk](https://github.com/BurakBasyildiz/Veri_Gorsellestirme_Donem_Sonu_Odevi/assets/161215094/4a832649-99f9-4b98-a629-7204a356f6d2)
+
+[Electric Cars.pdf](https://github.com/BurakBasyildiz/Veri_Gorsellestirme_Donem_Sonu_Odevi/files/15443730/Electric.Cars.pdf)
