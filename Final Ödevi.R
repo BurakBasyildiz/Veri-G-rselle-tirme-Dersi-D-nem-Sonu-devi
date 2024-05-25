@@ -36,7 +36,7 @@ my_colors <- c(
   "2020" = "#ff7f0e",
   "2021" = "#1f77b4",
   "2022" = "#9467bd",
-  "2023" = "#d62728"  # 2023 için daha belirgin bir renk
+  "2023" = "#d62728"  
 )
 
 # Histogram oluştur
@@ -47,7 +47,7 @@ hist_plot1 <- ggplot(ev_count_by_year, aes(x = Model.Year, y = EV_Count, fill = 
        x = "Model Yılı",
        y = "Elektrikli Araç Sayısı") +
   theme_minimal() +
-  theme(axis.text.x = element_text(angle = 25, hjust = 1)) +  # x eksenindeki metinleri 90 derece döndür
+  theme(axis.text.x = element_text(angle = 25, hjust = 1)) +  # x eksenindeki metinleri 25 derece döndür
   guides(fill = FALSE) +  # Legend'u kaldır
   scale_fill_manual(values = my_colors)  # Manuel renk paletini kullan
 
@@ -101,7 +101,7 @@ violin_plot_clean <- ggplot(ev_data_clean, aes(x = Electric.Vehicle.Type, y = El
   theme_minimal() +
   theme(axis.text.x = element_blank(), # x-eksenindeki metinleri kaldır
         axis.ticks.x = element_blank(), # x-eksenindeki işaretleri kaldır
-        legend.position = "bottom") + # leyendayı aşağıya taşı
+        legend.position = "bottom") + # legend'i aşağıya taşı
   xlab(NULL) # x-ekseni etiketini kaldır
 
 # Temizlenmiş grafiği görüntüle
@@ -130,14 +130,14 @@ brand_eligibility <- ev_data %>%
   arrange(desc(Count)) %>%  # Sütunları büyükten küçüğe sıralama
   top_n(15, Count)  # İlk 15 markayı seçme
 
-# Yatay çubuk grafik oluşturma (markaların yazılışını 90 derece döndürme)
+# Yatay çubuk grafik oluşturma (markaların yazılışını 25 derece döndürme)
 bar_plot <- ggplot(brand_eligibility, aes(x = reorder(Make, -Count), y = Count, fill = Clean.Alternative.Fuel.Vehicle..CAFV..Eligibility)) +
   geom_bar(stat = "identity", position = "dodge", width = 0.7) +  # Genişliği ayarlama
   labs(title = "En Fazla Araç Sayısına Sahip 15 Markanın Temiz ve Alternatif Yakıtlı Araç Teşvikine Uygunluğu",
        x = "Marka",
        y = "Sayı",
        fill = "Uygunluk Durumu") +
-  theme(axis.text.x = element_text(angle = 25, hjust = 1)) +  # Markaların yazılışını 90 derece döndürme
+  theme(axis.text.x = element_text(angle = 25, hjust = 1)) +  # Markaların yazılışını 25 derece döndürme
   scale_fill_manual(values = c("green", "blue", "red")) +  # Uygunluk durumu için renkler
   guides(fill = guide_legend(title = "Uygunluk Durumu")) +
   theme(legend.position = "bottom", # Uygunluk durumu için renklerin gösterimi
