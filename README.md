@@ -2,10 +2,11 @@
 Elektrikli Araçlarla ilgili bir veri dosyasından R programlama diliyle yapılan analizlerin görselleştirilerek poster oluşturulması
 
 
-Veri Kaynağı:
+VERİ KAYNAĞI:
 https://www.kaggle.com/code/vencerlanz09/electric-cars-eda-with-feature-engineering?rvi=1
 
-Kodlar:
+KODLAR:
+
 ev_data <- read.csv("/Users/burakbasyildiz/Downloads/Electric_Vehicle_Population_Data.csv")
 library(ggplot2)
 library(dplyr)
@@ -161,7 +162,7 @@ print(bar_plot)
 # Grafiği görüntüleme
 print(bar_plot)
 
-Grafikler:
+GRAFİKLER:
 ![hist](https://github.com/BurakBasyildiz/Veri_Gorsellestirme_Donem_Sonu_Odevi/assets/161215094/ef179ce1-dadf-46b5-a758-e5d2b1bf657b)
 ![bubble 2](https://github.com/BurakBasyildiz/Veri_Gorsellestirme_Donem_Sonu_Odevi/assets/161215094/45d61fd5-0da9-4019-be61-6ed60f1378fe)
 ![violin](https://github.com/BurakBasyildiz/Veri_Gorsellestirme_Donem_Sonu_Odevi/assets/161215094/100927ae-eaea-454a-b72e-35aa75dacd5f)
